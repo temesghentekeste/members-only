@@ -12,6 +12,9 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <p class="control">
+      <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: "button is-info"%>
+    </p>
     <%= yield %>
   </body>
 </html>
