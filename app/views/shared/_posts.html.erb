@@ -1,8 +1,12 @@
-<% @posts.each do |post|%>
-  <div>
-    <p><%= post.content %></p>
-    <% if user_signed_in? %>
-      <small><%= post.user.name %></small>
-    <% end %>
-  </div>
-<% end %>
+<div class="container ">
+  <% @posts.each do |post|%>
+    <div class="row">
+      <div class="col-md-6 mx-auto card mb-2 bg-dark text-white">
+        <div class="card-body">
+          <p class="lead mb-1"><%= post.content %></p> 
+          <%= post_info(post) %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

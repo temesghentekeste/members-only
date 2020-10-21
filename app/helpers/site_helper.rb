@@ -22,5 +22,21 @@ module SiteHelper
       render 'layouts/alert'
     end
   end
+  
+  def welcome
+    if user_signed_in?
+      controller.redirect_to posts_path
+    else
+      render 'home/welcome'
+    end
+  end
+
+  def post_info(post)
+    if user_signed_in?
+      render 'shared/member_info', post: post
+    else
+      render 'shared/guest_info', post: post
+    end
+  end
 
 end
