@@ -25,6 +25,7 @@ module SiteHelper
   
   def welcome
     if user_signed_in?
+      flash[:notice] = "You are successfully signen in #{current_user.name}"
       controller.redirect_to posts_path
     else
       render 'home/welcome'
