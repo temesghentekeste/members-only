@@ -1,2 +1,9 @@
 // app/javascript/stylesheets/application.scss
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+@media (max-width: 768px) {
+  a.btn-actions {
+      width:100%;
+  }
+}
