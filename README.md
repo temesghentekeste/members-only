@@ -34,14 +34,13 @@ In this project, signed in users can create a post and look who wrote a particul
 - PostgreSQL
 
 ## 🔴 Live Demo <a name = "live"></a>
-*Click [here](https://members-only-temesghen.herokuapp.com/users/) in order to see a Live Demo of this project.**
+*To be Deployed**
 
 
 ## Screenshots <a name = "sc"></a>
 
-![screenshot](./app/assets/images/members-desktop.png)
-![screenshot](./app/assets/images/create-post-desktop.png)
-![screenshot](./app/assets/images/guest-mobile.png)
+![screenshot](./app/assets/images/home_page_desktop.png)
+![screenshot](./app/assets/images/members_view.png)
 
 
 ## Getting Started <a name = "gs"></a>

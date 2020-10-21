@@ -7,6 +7,7 @@ body {
 }
 
 .jumbotron {
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
 
@@ -25,7 +26,8 @@ hr.divider {
 }
 
 .footer {
-  padding: 8rem 0;
+  padding: 5rem 0 10rem;
+  margin-top: 5rem;
 }
 
 @media (max-width: 768px) {
