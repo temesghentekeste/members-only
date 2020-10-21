@@ -1,16 +1,16 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]  
-  def index 
-    @posts=Post.page params[:page]
+  before_action :authenticate_user!, only: [:new, :create]
+  def index
+    @posts = Post.page params[:page]
   end
 
-  def new 
+  def new
     @post = current_user.posts.build
   end
 
-  def create 
+  def create
     @post = current_user.posts.build(post_params)
-    if(@post.save)
+    if (@post.save)
       flash[:success] = "Your post was successfully created"
       redirect_to root_path
     else
@@ -19,7 +19,8 @@ class PostsController < ApplicationController
   end
 
   private
-   def post_params
+
+  def post_params
     params.require(:post).permit(:content)
-   end
+  end
 end

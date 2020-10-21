@@ -1,6 +1,6 @@
 module SiteHelper
   def member_or_guest
-    if user_signed_in? 
+    if user_signed_in?
       render '/layouts/member_menu'
     else
       render '/layouts/guest_menu'
@@ -8,7 +8,7 @@ module SiteHelper
   end
 
   def member_or_guest_action
-    if user_signed_in? 
+    if user_signed_in?
       render '/layouts/member_action'
     else
       render '/layouts/guest_action'
@@ -16,13 +16,13 @@ module SiteHelper
   end
 
   def flash_message(name)
-    if name=='notice'
+    if name == 'notice'
       render 'layouts/notice'
-    elsif name=='alert'
+    elsif name == 'alert'
       render 'layouts/alert'
     end
   end
-  
+
   def welcome
     if user_signed_in?
       flash[:notice] = "You are successfully signen in #{current_user.name}"
@@ -39,5 +39,4 @@ module SiteHelper
       render 'shared/guest_info', post: post
     end
   end
-
 end
