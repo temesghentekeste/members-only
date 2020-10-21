@@ -5,4 +5,7 @@ class Post < ApplicationRecord
   validates :content, presence: true, length: {maximum:140}
 
   default_scope { order(created_at: :desc) }
+
+  paginates_per 5
+
 end

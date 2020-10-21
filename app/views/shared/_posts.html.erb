@@ -1,4 +1,7 @@
 <div class="container ">
+  <div class="d-flex justify-content-center mt-2">
+        <%= paginate @posts%>
+  </div>
   <% @posts.each do |post|%>
     <div class="row">
       <div class="col-md-6 mx-auto card mb-2 bg-dark text-white">
@@ -9,4 +12,7 @@
       </div>
     </div>
   <% end %>
+  <div class="d-flex justify-content-center">
+        <%= paginate @posts%>
+  </div>
 </div>
