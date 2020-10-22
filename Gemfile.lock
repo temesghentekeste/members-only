@@ -86,6 +86,7 @@ GEM
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hirb (0.7.3)
+    honeybadger (4.7.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.1)
@@ -165,6 +166,7 @@ GEM
     responders (3.0.1)
       actionpack (>= 5.0)
       railties (>= 5.0)
+    ruby_http_client (3.5.1)
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -179,6 +181,8 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
+    sendgrid-ruby (6.3.6)
+      ruby_http_client (~> 3.4)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -229,6 +233,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   devise
   hirb
+  honeybadger
   jbuilder (~> 2.7)
   kaminari
   listen (~> 3.2)
@@ -237,6 +242,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
   selenium-webdriver
+  sendgrid-ruby
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
