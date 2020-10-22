@@ -30,6 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'hirb'
 gem 'kaminari'
 gem 'sendgrid-ruby'
+gem 'honeybadger'
 
 # Devise gem
 gem 'devise'
