@@ -58,6 +58,10 @@ $ bundle install
 $ rails db:migrate  
 ~~~
 
+- When signing up to the application, you need an email confirmatin link.
+- Copy and paste the one sent on your localhost console
+- The picture below shows where to get the link
+![screenshot](./app/assets/images/confirmation.png)
 
 
 ## ✒️  Author <a name = "author"></a>
