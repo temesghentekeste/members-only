@@ -34,7 +34,7 @@ In this project, signed in users can create a post and look who wrote a particul
 - PostgreSQL
 
 ## 🔴 Live Demo <a name = "live"></a>
-*To be Deployed**
+*Click [here](https://membersonly-temesghen.herokuapp.com) in order to see a Live Demo of this project.**
 
 
 ## Screenshots <a name = "sc"></a>
