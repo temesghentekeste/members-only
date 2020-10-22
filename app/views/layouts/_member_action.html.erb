@@ -1,0 +1,7 @@
+
+<%= link_to "Create New Post", new_post_path, class: "dropdown-item"%>
+<div class="dropdown-divider"></div>
+ <%= link_to('Logout',     
+        destroy_user_session_path,
+        class: 'dropdown-item', title: 'Logout', :method => :delete) %>
+<div class="dropdown-divider"></div>

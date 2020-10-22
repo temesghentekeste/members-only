@@ -1,0 +1,14 @@
+  <div class="jumbotron">
+    <div class="welcome">
+      <h1 class="font-weight-bold mb-1">Welcome to Members Only</h1>
+      <p class="lead"> By joining Members Only Clubhouse you will be able to create your own posts and see who wrote a particular post. <%= link_to('See All Posts', posts_path, class: 'text-decoration-none', title: 'Sign In') %></p> 
+      
+    </div>
+
+    <div class="join-us">
+      <%= link_to('Sign In', new_user_session_path, class: 'btn btn-primary mr-3 mb-3 mb-md-0', title: 'Sign In') %>
+
+      <%= link_to('Sign Up', new_user_registration_path, class: 'btn btn-success', title: 'Sign In') %>
+    
+    </div>
+  </div>
