@@ -6,5 +6,5 @@ class Post < ApplicationRecord
 
   default_scope { order(created_at: :desc) }
 
-  paginates_per 3
+  paginates_per 2
 end

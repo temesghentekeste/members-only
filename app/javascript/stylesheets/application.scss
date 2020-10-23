@@ -34,4 +34,26 @@ hr.divider {
   a.btn-actions {
     width: 100%;
   }
+
+  .jumbotron {
+  
+    .welcome {
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  
+    .join-us {
+      flex-direction: column;
+    }
+  }
+
+  
 }
